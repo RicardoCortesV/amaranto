@@ -1,0 +1,27 @@
+header{
+    background-image: url(../../assets/mainBG.jpg);
+}
+
+.nav-item {
+    margin-right: 2rem;
+    list-style: none;
+    color: #ffe4c4;
+}
+.nav-item a {
+    list-style: none;
+    color: #ffe4c4;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+
+}
