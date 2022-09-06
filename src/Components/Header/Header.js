@@ -1,42 +1,30 @@
-import React from "react"
-import Logo from "../../assets/Logo.png"
-import "./Header.css"
-import "bootstrap/dist/css/bootstrap.min.css"
+import React from "react";
+import Logo from "../../assets/Logo.png";
+import "./Header.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 const Header = () => {
     return(
-                   <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src={Logo} alt="logo" width="80" height="80"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse nav-list" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">El amaranto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">En la red</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-              </div>
-        </nav>
-    </header>
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home"><img src={Logo} alt="logo" width="80" height="80"/></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#">Inicio</Nav.Link>
+            <Nav.Link href="#">El amaranto</Nav.Link>
+            <Nav.Link href="#">En la red</Nav.Link>
+            <Nav.Link href="#">Productos</Nav.Link>
+            <Nav.Link href="#">Sobre nosotros</Nav.Link>
+            <Nav.Link href="#">Contacto</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+       
        
     )
 }
