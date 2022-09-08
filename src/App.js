@@ -1,9 +1,15 @@
 import React from "react";
-import Header from "./Components/Header/Header"   
+import Navbar from "./Components/Header/Header"
+import ItemListContainer from "./Components/Containers/itemListContainer/ItemListContainer";
 
 function App() {
+  const mensaje = "Bienvenidos a esta página"
   return (
-   <Header />
+<>  
+   <Navbar />
+   <ItemListContainer
+   greeting={mensaje}/>
+   </>
   );
 }
 

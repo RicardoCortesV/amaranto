@@ -1,1 +1,14 @@
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-item {
+    color: #9e0505;
+    list-style: none;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #9e0505;
+}
 
