@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Components/Header/Header"
 import ItemListContainer from "./Components/Containers/itemListContainer/ItemListContainer";
+import ItemCount from "./Components/ItemCount";
 
 function App() {
   const mensaje = "Bienvenidos a esta página"
@@ -9,7 +10,7 @@ function App() {
    <Navbar />
    <ItemListContainer
    greeting={mensaje}/>
-   </>
+</>
   );
 }
 
