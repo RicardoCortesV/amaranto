@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Components/Header/Header"
-import ItemListContainer from "./Components/Containers/itemListContainer/ItemListContainer";
+import ItemListContainer from "./Components/Containers/ItemListContainer/ItemListContainer";
 import ItemCount from "./Components/ItemCount";
 
 function App() {
